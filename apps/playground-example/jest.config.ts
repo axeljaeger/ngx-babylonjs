@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
   displayName: 'playground-example',
-  preset: '../jest.preset.js',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../coverage/playground-example',
+  coverageDirectory: '../../coverage/apps/playground-example',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
