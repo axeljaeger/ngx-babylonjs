@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@ngx-babylonjs/ngx-babylonjs": ["libs/ngx-babylonjs/src/index.ts"]
-    }
+    },
+    "strictPropertyInitialization": false
   },
   "exclude": ["node_modules", "tmp"]
 }

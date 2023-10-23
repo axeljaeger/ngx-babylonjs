@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+
+import { BabylonJSViewComponent } from '@ngx-babylonjs/ngx-babylonjs';
+import { PlaygroundExampleComponent } from './PlaygroundExample/playground-example.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
+  imports: [ BabylonJSViewComponent, PlaygroundExampleComponent ],
   selector: 'ngx-babylonjs-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'playground-example';
+export class AppComponent  {
+  
 }

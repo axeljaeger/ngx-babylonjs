@@ -1,1 +1,2 @@
-export * from './lib/ngx-babylonjs/ngx-babylonjs.component';
+export * from './lib/babylonjsview/babylonjsview.component';
+export * from './lib/lifecycle';
