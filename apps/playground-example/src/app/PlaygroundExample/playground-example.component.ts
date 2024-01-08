@@ -13,7 +13,6 @@ import '@babylonjs/core/Culling/ray'
   template: `<ng-content/>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{provide: BabylonConsumer, useExisting: forwardRef(() => PlaygroundExampleComponent)}],
-
 })
 export class PlaygroundExampleComponent implements BabylonConsumer {
   async ngxSceneCreated(scene: Scene): Promise<void> {
@@ -25,7 +24,6 @@ export class PlaygroundExampleComponent implements BabylonConsumer {
     // Our built-in 'ground' shape.
     const ground = MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
 
-    scene.render();
+    // scene.render();
   }
-
 }

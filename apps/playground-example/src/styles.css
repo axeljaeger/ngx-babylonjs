@@ -5,3 +5,8 @@ ngx-babylonjs-view {
     height: 100%;
     display: block;
 }
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
