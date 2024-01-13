@@ -1,12 +1,12 @@
 import {
   AfterContentChecked,
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   ContentChildren,
   ElementRef,
   HostListener,
   NgZone,
+  OnInit,
   QueryList,
   ViewChild,
 } from '@angular/core';
@@ -27,7 +27,7 @@ import { WebGPUEngine } from '@babylonjs/core/Engines/webgpuEngine';
   standalone: true,
 })
 export class BabylonJSViewComponent
-  implements AfterViewInit, AfterContentChecked {
+  implements OnInit, AfterContentChecked {
   @ViewChild('view3dcanvas', { static: true })
   canvasRef: ElementRef<HTMLCanvasElement>;
 
@@ -63,7 +63,7 @@ export class BabylonJSViewComponent
     this.engine.resize(true);
   }
 
-  async ngAfterViewInit(): Promise<void> {
+  async ngOnInit(): Promise<void> {
     await this.initEngine(this.canvasRef);
     await Promise.all(
       this.renderers.map((renderer) =>
